@@ -81,3 +81,10 @@ Visa                    | 4444333322221111, 4911830000000 and 4917610000000000
 Visa Debit              | 4462030000000000 and 4917610000000000003
 Visa Electron (UK only) | 4917300800000000
 Visa Purchasing         | 4484070000000000
+
+License
+-------
+
+[![license](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
