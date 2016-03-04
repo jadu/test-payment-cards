@@ -9,7 +9,7 @@ Ogone
 -----
 
 Card Type | Card Number
-----------|-----------------
+:---------|:----------------
 Visa      | 4111111111111111
 
 Details about using test cards in Ogone can be found here: [Create and configure your Ogone Test Account](https://payment-services.ingenico.com/int/en/ogone/support/guides/user%20guides/test-account-creation).
@@ -18,7 +18,7 @@ PayPal
 ------
 
 Card Type                  | Card Number(s)
----------------------------|------------------------------------------------------
+:--------------------------|:-----------------------------------------------------
 American Express           | 378282246310005 and 371449635398431
 American Express Corporate | 378734493671000
 Australian BankCard        | 5610591081018250
@@ -32,7 +32,7 @@ RedSys/Saferpay
 ---------------
 
 Card Number      | Description
------------------|---------------------------------------------------------------------------------------------------
+:----------------|:--------------------------------------------------------------------------------------------------
 9451123100000111 | Saferpay test card "enrolled", returns `ECI=1`. Test card for 3D-Secure processing.
 9451123100000004 | Saferpay test card "not enrolled", returns `ECI=2`. Normal test card without 3D-Secure processing.
 9451123100000202 | Saferpay test card "unable to enroll", returns `ECI=0`. Test card for SSL processing only.
@@ -46,7 +46,7 @@ SagePay
 -------
 
 Card Type               | Card Number         | Issue | CV2
-------------------------|---------------------|-------|----
+:-----------------------|:--------------------|:------|:---
 American Express        | 374200000000004     |       | 123
 Diner's Club            | 36000000000008      |       | 123
 JCB                     | 3569990000000009    |       | 123
@@ -66,7 +66,7 @@ WorldPay
 WorldPay test cards do not have a card verification code and issue number.
 
 Card Type               | Card Number(s)
-------------------------|-----------------------------------------------------
+:-----------------------|:----------------------------------------------------
 Airplus                 | 122000000000003
 American Express        | 34343434343434
 Cartebleue              | 5555555555554444
