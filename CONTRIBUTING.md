@@ -9,3 +9,8 @@ Contributions are welcome to this repository, so if there's a payment gateway mi
 * Check your spelling/grammar
 
 Thank you.
+
+Notes
+-----
+
+This repository uses *.editorconfig* to maintain consistent line endings and whitespace.
