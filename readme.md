@@ -1,5 +1,5 @@
-Payment Gateways' Test Cards
-============================
+Test Payment Cards
+==================
 
 A list of available test payment cards for various payment gateways. Please feel free to contribute test payment cards for gateways not currently listed here by making a pull request.
 
