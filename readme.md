@@ -67,6 +67,24 @@ Visa Electron           | 4917300000000008    |       | 123
 
 All test cards use the address "88" and postcode "412".
 
+Stripe
+------
+
+Full details of Stipe's test cards can be found on their [Testing](https://stripe.com/docs/testing) page of their documentation.
+
+Card Type            | Card Number
+:--------------------|:--------------------------------------
+American Express     | 378282246310005 and 371449635398431
+Diners Club          | 30569309025904 and 38520000023237
+Discover             | 6011111111111117 and 6011000990139424
+JCB                  | 3530111333300000 and 3566002020360505
+MasterCard           | 5555555555554444
+MasterCard (Debit)   | 5200828282828210
+MasterCard (Prepaid) | 5105105105105100
+Visa                 | 4242424242424242 and 4012888888881881
+Visa (Debit)         | 4000056655665556
+
+
 WorldPay
 --------
 
