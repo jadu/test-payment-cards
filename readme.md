@@ -19,6 +19,19 @@ A list of available test payment cards for various payment gateways. Please feel
 
 Most payment gateways will accept any date set in the future for the card expiry date unless specified differently below.
 
+### Authorize.Net
+
+The following test credit card numbers will only work in the Authorize.Net sandbox. If the card code is required use any 3-digit combination except for American Express which requires a 4-digit combination. See the [Authorize.Net Testing Guide](http://developer.authorize.net/hello_world/testing_guide/) for further details.
+
+Card Type                 | Card Number(s)
+:-------------------------|:--------------------------------------------------
+American Express          | 370000000000002
+Diners Club/ Carte Blanch | 38000000000006
+Discover                  | 6011000000000012
+JCB                       | 3088000000000017
+MasterCard                | 5424000000000015
+Visa                      | 4007000000027, 4012888818888 and 4111111111111111
+
 ### Ogone
 
 Card Type | Card Number
