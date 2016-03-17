@@ -6,6 +6,7 @@ A list of available test payment cards for various payment gateways. Please feel
 ## Table of Contents
 
 - [Payment Gateways](#payment-gateways)
+    - [Authorize.Net](#authorizenet)
     - [Ogone](#ogone)
     - [PayPal](#paypal)
     - [RedSys](#redsys)
