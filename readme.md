@@ -1,12 +1,25 @@
 Test Payment Cards
 ==================
 
-A list of available test payment cards for various payment gateways. Please feel free to contribute test payment cards for gateways not currently listed here by making a pull request.
+A list of available test payment cards for various payment gateways. Please feel free to contribute cards for any payment gateways not currently listed here by making a pull request.
+
+## Table of Contents
+
+- [Payment Gateways](#payment-gateways)
+    - [Ogone](#ogone)
+    - [PayPal](#paypal)
+    - [RedSys](#redsys)
+    - [Saferpay](#saferpay)
+    - [SagePay](#sagepay)
+    - [Stripe](#stripe)
+    - [WorldPay](#worldpay)
+- [License](#license)
+
+## Payment Gateways
 
 Most payment gateways will accept any date set in the future for the card expiry date unless specified differently below.
 
-Ogone
------
+### Ogone
 
 Card Type | Card Number
 :---------|:----------------
@@ -14,8 +27,7 @@ Visa      | 4111111111111111
 
 Details about using test cards in Ogone can be found here: [Create and configure your Ogone Test Account](https://payment-services.ingenico.com/int/en/ogone/support/guides/user%20guides/test-account-creation).
 
-PayPal
-------
+### PayPal
 
 Card Type                  | Card Number(s)
 :--------------------------|:-----------------------------------------------------
@@ -28,15 +40,13 @@ JCB                        | 3530111333300000 and 3566002020360505
 MasterCard                 | 5555555555554444 and 5105105105105100
 Visa                       | 4111111111111111, 4012888888881881 and 4222222222222
 
-RedSys
-------
+### RedSys
 
 Card Number      | Expiration | CVV2 | CIP Code
 :----------------|:-----------|:-----|:---------
 4548812049400004 | 12/20      | 123  | 123456
 
-Saferpay
---------
+### Saferpay
 
 Card Number      | Description
 :----------------|:--------------------------------------------------------------------------------------------------
@@ -49,8 +59,7 @@ Card Number      | Description
 
 The last two digits of the AMOUNT attributes define the result code of the authorization response. Only if the last two digits of the value are set to "00" or "01" will payment be authorized. In doing so requests with AMOUNT "00" receive `ECI=1` in the response, which means the 3-D Secure liability shift is given whilst a liability shift is not applicable for requests with AMOUNT "01" receiving `ECI=0` in the response. For all other requests where AMOUNT is not "00" or "01" Saferpay will send an answer with `RESULT="65"` where AUTHRESULT will contain the error code.
 
-SagePay
--------
+### SagePay
 
 Card Type               | Card Number         | Issue | CV2
 :-----------------------|:--------------------|:------|:---
@@ -67,8 +76,7 @@ Visa Electron           | 4917300000000008    |       | 123
 
 All test cards use the address "88" and postcode "412".
 
-Stripe
-------
+### Stripe
 
 Full details of Stipe's test cards can be found on their [Testing](https://stripe.com/docs/testing) page of their documentation.
 
@@ -85,8 +93,7 @@ Visa                 | 4242424242424242 and 4012888888881881
 Visa (Debit)         | 4000056655665556
 
 
-WorldPay
---------
+### WorldPay
 
 WorldPay test cards do not have a card verification code and issue number.
 
@@ -107,8 +114,7 @@ Visa Debit              | 4462030000000000 and 4917610000000000003
 Visa Electron (UK only) | 4917300800000000
 Visa Purchasing         | 4484070000000000
 
-License
--------
+## License
 
 [![license](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
