@@ -7,6 +7,7 @@ A list of available test payment cards for various payment gateways. Please feel
 
 - [Payment Gateways](#payment-gateways)
     - [Authorize.Net](#authorizenet)
+    - [Braintree](#braintree)
     - [Ogone](#ogone)
     - [PayPal](#paypal)
     - [RedSys](#redsys)
@@ -32,6 +33,31 @@ Discover                  | 6011000000000012
 JCB                       | 3088000000000017
 MasterCard                | 5424000000000015
 Visa                      | 4007000000027, 4012888818888 and 4111111111111111
+
+### Braintree
+
+The following card numbers do not trigger specific credit card errors:-
+
+Card Type        | Card Number(s)
+:----------------|:------------------------------------
+American Express | 378282246310005 and 371449635398431
+Discover         | 6011111111111117
+JCB              | 3530111333300000
+Maestro          | 6304000000000000
+Mastercard       | 5555555555554444
+Visa             | 4111111111111111, 4005519200000004, 4009348888881881, 4012000033330026, 4012000077777777, 4012888888881881, 4217651111111119 and 4500600000000061
+
+To trigger an unsuccessful credit card verification use one of the following cards:-
+
+Card Type        | Card Number(s)   | Verification Response
+:----------------|:-----------------|:----------------------
+American Express | 378734493671000  | Processor declined
+Discover         | 6011000990139424 | Processor declined
+Mastercard       | 5105105105105100 | Processor declined
+Visa             | 4000111111111115 | Processor declined
+JCB              | 3566002020360505 | Failed (3000)
+
+Further details about using Braintree test payment cards can be found on their [testing page](https://developers.braintreepayments.com/reference/general/testing/php).
 
 ### Ogone
 
