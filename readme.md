@@ -9,6 +9,7 @@ A list of available test payment cards for various payment gateways. Please feel
     - [Authorize.Net](#authorizenet)
     - [Braintree](#braintree)
     - [Ogone](#ogone)
+    - [PayPoint](#paypoint)
     - [PayPal](#paypal)
     - [RedSys](#redsys)
     - [Saferpay](#saferpay)
@@ -80,6 +81,14 @@ Discover                   | 6011111111111117 and 6011000990139424
 JCB                        | 3530111333300000 and 3566002020360505
 MasterCard                 | 5555555555554444 and 5105105105105100
 Visa                       | 4111111111111111, 4012888888881881 and 4222222222222
+
+### PayPoint
+
+Card Type           | Card Number(s)
+:-------------------|:--------------------------------------
+Maestro             | 491182014295916748
+Mastercard (Credit) | 5555555555554444 and 5105105105105100
+Visa                | 4444333322221111 and 4444444444441111
 
 ### RedSys
 
