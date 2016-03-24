@@ -9,6 +9,7 @@ A list of available test payment cards for various payment gateways. Please feel
     - [Authorize.Net](#authorizenet)
     - [Braintree](#braintree)
     - [Ogone](#ogone)
+    - [Pay360](#pay360)
     - [PayPal](#paypal)
     - [PayPoint](#paypoint)
     - [RedSys](#redsys)
@@ -68,6 +69,43 @@ Card Type | Card Number
 Visa      | 4111111111111111
 
 Details about using test cards in Ogone can be found here: [Create and configure your Ogone Test Account](https://payment-services.ingenico.com/int/en/ogone/support/guides/user%20guides/test-account-creation).
+
+### Pay360
+
+Card Type           | Card Number      | 3DS | Successful Authorisation
+:-------------------|:-----------------|:----|:-------------------------
+American Express    | 9905000000005139 | Y   | Y
+American Express    | 9905000000000015 | N   | Y
+American Express    | 9905000000010253 | U   | Y
+American Express    | 9905000000005287 | Y   | N
+American Express    | 9905000000000163 | N   | N
+American Express    | 9905000000010402 | U   | N
+Mastercard (Debit)  | 9900000000005159 | Y   | Y
+Mastercard (Debit)  | 9900000000000010 | N   | Y
+Mastercard (Debit)  | 9900000000010258 | U   | Y
+Mastercard (Debit)  | 9900000000005282 | Y   | N
+Mastercard (Debit)  | 9900000000000168 | N   | N
+Mastercard (Debit)  | 9900000000010407 | U   | N
+Mastercard (Credit) | 9901000000005133 | Y   | Y
+Mastercard (Credit) | 9901000000000019 | N   | Y
+Mastercard (Credit) | 9901000000010257 | U   | Y
+Mastercard (Credit) | 9901000000005281 | Y   | Y
+Mastercard (Credit) | 9901000000000167 | N   | Y
+Mastercard (Credit) | 9901000000010406 | U   | Y
+Visa (Debit)        | 9902000000005132 | Y   | Y
+Visa (Debit)        | 9902000000000018 | N   | Y
+Visa (Debit)        | 9902000000010256 | U   | Y
+Visa (Debit)        | 9902000000005280 | Y   | N
+Visa (Debit)        | 9902000000000166 | N   | N
+Visa (Debit)        | 9902000000010405 | U   | N
+Visa (Credit)       | 9903000000005131 | Y   | Y
+Visa (Credit)       | 9903000000000017 | N   | Y
+Visa (Credit)       | 9903000000010255 | U   | Y
+Visa (Credit)       | 9903000000005289 | Y   | N
+Visa (Credit)       | 9903000000000165 | N   | N
+Visa (Credit)       | 9903000000010404 | U   | N
+
+The above test card details for Pay360 can be found on their [developers support website](https://paymentdeveloperdocs.com/test_card_numbers/).
 
 ### PayPal
 
