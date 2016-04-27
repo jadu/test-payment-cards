@@ -149,20 +149,40 @@ The last two digits of the AMOUNT attributes define the result code of the autho
 
 ### SagePay
 
-Card Type               | Card Number         | Issue | CVV2
-:-----------------------|:--------------------|:------|:----
-American Express        | 374200000000004     |       | 123
-Diner's Club            | 36000000000008      |       | 123
-JCB                     | 3569990000000009    |       | 123
-Laser                   | 6304990000000000044 |       | 123
-Maestro (UK)            | 5641820000000005    | 01    | 123
-Maestro (International) | 300000000000000004  |       | 123
-MasterCard              | 5404000000000001    |       | 123
-Visa                    | 4929000000006       |       | 123
-Visa Debit / Delta      | 4462000000000003    |       | 123
-Visa Electron           | 4917300000000008    |       | 123
+Card Type               | Card Number                        | Issue | CVV2 | 3DS
+:-----------------------|:-----------------------------------|:------|:-----|:----
+American Express        | 374200000000004                    |       | 1234 | N/A
+Diner's Club            | 36000000000008                     |       | 123  | N/A
+JCB                     | 3569990000000009                   |       | 123  | N/A
+Laser                   | 6304990000000000044                |       | 123  | N/A
+Maestro (UK)            | 5641820000000005 and 6759000000005 | 01    | 123  | Y
+Maestro (Germany)       | 6705000000008                      | 01    | 123  | Y
+Maestro (Ireland)       | 6777000000007                      | 01    | 123  | Y
+Maestro (Spain)         | 6766000000000                      | 01    | 123  | Y
+Maestro (International) | 300000000000000004                 |       | 123  | Y
+MasterCard (Credit)     | 5404000000000001                   |       | 123  | Y
+MasterCard (Credit)     | 5404000000000043                   |       | 123  | N
+MasterCard (Credit)     | 5404000000000084                   |       | 123  | U
+MasterCard (Credit)     | 5404000000000068                   |       | 123  | E
+MasterCard (Debit)      | 5573470000000001                   |       | 123  | Y
+Visa                    | 4929000000006                      |       | 123  | Y
+Visa                    | 4929000005559                      |       | 123  | N
+Visa                    | 4929000000014                      |       | 123  | U
+Visa                    | 4929000000022                      |       | 123  | E
+Visa Corporate          | 4484000000002                      |       | 123  | N
+Visa Debit / Delta      | 4462000000000003                   |       | 123  | Y
+Visa Electron           | 4917300000000008                   |       | 123  | Y
 
 All test cards use the address "88" and postcode "412".
+
+The 3DSecure responses (3DS) are:-
+
+ * Y - Enrolled, and will progress to the password page to complete verification.
+ * N - NOT Enrolled and will return a `3DSecureStatus=NOTAVAILABLE` back to your system.
+ * U - Unable to verify enrollment and will return a `3DSecureStatus=NOTAVAILABLE` back to your system.
+ * E - Error occurred during the 3D Secure verification.  This will return a `3DSecureStatus=ERROR` back to your system.
+
+Full details can be found on their [Test card details for your test transactions](http://www.sagepay.co.uk/support/12/36/test-card-details-for-your-test-transactions) page.
 
 ### Stripe
 
