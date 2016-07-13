@@ -15,6 +15,7 @@ A list of available test payment cards for various payment gateways. Please feel
     - [RedSys](#redsys)
     - [Saferpay](#saferpay)
     - [SagePay](#sagepay)
+    - [SecurePay](#securepay)
     - [Stripe](#stripe)
     - [WePay](#wepay)
     - [WorldPay](#worldpay)
@@ -183,6 +184,14 @@ The 3DSecure responses (3DS) are:-
  * E - Error occurred during the 3D Secure verification.  This will return a `3DSecureStatus=ERROR` back to your system.
 
 Full details can be found on their [Test card details for your test transactions](http://www.sagepay.co.uk/support/12/36/test-card-details-for-your-test-transactions) page.
+
+### SecurePay
+
+Documentation for testing can be found in the [SecurePay Integration guides](https://www.securepay.com.au/developers/integration-guides).
+
+Card Type | Card Number      | CVV2
+:---------|:-----------------|:-----
+Visa      | 4444333322221111 | 123
 
 ### Stripe
 
