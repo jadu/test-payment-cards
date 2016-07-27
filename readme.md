@@ -19,6 +19,7 @@ A list of available test payment cards for various payment gateways. Please feel
     - [Stripe](#stripe)
     - [WePay](#wepay)
     - [WorldPay](#worldpay)
+- [Further Resources](#further-resources)
 - [License](#license)
 
 ## Payment Gateways
@@ -239,6 +240,12 @@ Visa                    | 4444333322221111, 4911830000000 and 4917610000000000
 Visa Debit              | 4462030000000000 and 4917610000000000003
 Visa Electron (UK only) | 4917300800000000
 Visa Purchasing         | 4484070000000000
+
+## Further Resources
+
+This section has some other external resources you might want to check out. 
+
+[Dummy Credit Card Generator](http://saijogeorge.com/dummy-credit-card-generator/) - generates credit card numbers that pass the mod 10 check.
 
 ## License
 
