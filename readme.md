@@ -243,9 +243,12 @@ Visa Purchasing         | 4484070000000000
 
 ## Further Resources
 
-This section has some other external resources you might want to check out. 
+This section has some other external resources you might want to check out.
 
-[Dummy Credit Card Generator](http://saijogeorge.com/dummy-credit-card-generator/) - generates credit card numbers that pass the mod 10 check.
+ * [Dummy Credit Card Generator](http://saijogeorge.com/dummy-credit-card-generator/) - generates credit card numbers that pass the mod 10 check.
+ * [jQuery Credit Card Validator](http://jquerycreditcardvalidator.com/) - jQuery plugin for detecting card types and validating card numbers.
+ * [Credit Card Validator](https://github.com/braintree/card-validator) - Card number validation from the Braintree payment gateway.
+ * [Stripe's jQuery.payment](https://github.com/stripe/jquery.payment) - Can be used to validate inputs and to format numbers.
 
 ## License
 
