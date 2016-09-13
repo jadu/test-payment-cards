@@ -8,6 +8,7 @@ A list of available test payment cards for various payment gateways. Please feel
 - [Payment Gateways](#payment-gateways)
     - [Authorize.Net](#authorizenet)
     - [Braintree](#braintree)
+    - [Klarna](#klarna)
     - [Ogone](#ogone)
     - [Pay360](#pay360)
     - [PayPal](#paypal)
@@ -63,6 +64,14 @@ Visa             | 4000111111111115 | Processor declined
 JCB              | 3566002020360505 | Failed (3000)
 
 Further details about using Braintree test payment cards can be found on their [testing page](https://developers.braintreepayments.com/reference/general/testing/php).
+
+### Klarna
+
+Card Number      | CVV | Expiry Date
+:----------------|:----|:----------------------------------
+4111111111111111 | 123 | 12/16 (Or any date in the future)
+
+Test payment card details taken from the Klarna [developer documentation](https://developers.klarna.com/en/se+php/kco-v2/test-credentials).
 
 ### Ogone
 
