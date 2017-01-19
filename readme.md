@@ -40,6 +40,19 @@ JCB                       | 3088000000000017
 MasterCard                | 5424000000000015
 Visa                      | 4007000000027, 4012888818888 and 4111111111111111
 
+### Bambora
+
+The following test cards are for Bambora as defined on their [developers site](http://dev.bambora.com/testcards.html#credit-cards). Use the card expiry date "05/17".
+
+Card Type            | Card Number         | CVC
+:--------------------|:--------------------|-----
+MasterCard (Denmark) | 5156 2300 0000 0004 | 000
+MasterCard (Norway)  | 5206 8300 0000 0001 | 000
+MasterCard (Sweden)  | 5125 8600 0000 0006 | 000
+Visa (Denmark)       | 4154 2100 0000 0001 | 000
+Visa (Norway)        | 4002 7700 0000 0008 | 000
+Visa (Sweden)        | 4002 6200 0000 0005 | 000
+
 ### Braintree
 
 The following card numbers do not trigger specific credit card errors:-
