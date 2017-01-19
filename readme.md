@@ -7,6 +7,7 @@ A list of available test payment cards for various payment gateways. Please feel
 
 - [Payment Gateways](#payment-gateways)
     - [Authorize.Net](#authorizenet)
+    - [Bambora](#bambora)
     - [Braintree](#braintree)
     - [Klarna](#klarna)
     - [Ogone](#ogone)
