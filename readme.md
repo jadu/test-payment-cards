@@ -9,6 +9,7 @@ A list of available test payment cards for various payment gateways. Please feel
     - [Authorize.Net](#authorizenet)
     - [Bambora](#bambora)
     - [Braintree](#braintree)
+    - [ePay](#epay)
     - [Klarna](#klarna)
     - [Ogone](#ogone)
     - [Pay360](#pay360)
@@ -78,6 +79,18 @@ Visa             | 4000111111111115 | Processor declined
 JCB              | 3566002020360505 | Failed (3000)
 
 Further details about using Braintree test payment cards can be found on their [testing page](https://developers.braintreepayments.com/reference/general/testing/php).
+
+### ePay
+
+Test cards for [www.epay.eu](http://www.epay.eu).
+
+Card Type            | Card Number
+:--------------------|:-----------------
+Visa / Visa Electron | 3333333333333000
+Visa / Dankort       | 4444444444444000
+MasterCard           | 5555555555555000
+
+Change the last 3 digits of the card number for the payment to be rejected with the error code represented by the changed digits.
 
 ### Klarna
 
