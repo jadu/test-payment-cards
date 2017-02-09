@@ -9,6 +9,7 @@ A list of available test payment cards for various payment gateways. Please feel
     - [Authorize.Net](#authorizenet)
     - [Bambora](#bambora)
     - [Braintree](#braintree)
+    - [Capita SCP](#capita-scp)
     - [ePay](#epay)
     - [Klarna](#klarna)
     - [Ogone](#ogone)
@@ -79,6 +80,20 @@ Visa             | 4000111111111115 | Processor declined
 JCB              | 3566002020360505 | Failed (3000)
 
 Further details about using Braintree test payment cards can be found on their [testing page](https://developers.braintreepayments.com/reference/general/testing/php).
+
+### Capita SCP
+
+The following test cards are for Capita SCP 
+
+Card Type            | Card Number         | Issue
+:--------------------|:--------------------|:-------
+Visa                 | 4929 0000 0000 6    |
+MasterCard           | 5404 0000 0000 0001 |
+Visa Debit / Delta   | 4462 0000 0000 0003 | 
+Solo                 | 6334 9000 0000 0005 | 1
+Maestro              | 5641 8200 0000 0005 | 01
+American Express     | 3742 0000 0000 004  | 
+Visa Electron        | 4917 3000 0000 0008 | 
 
 ### ePay
 
