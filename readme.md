@@ -88,17 +88,17 @@ Authorised Payments: By entering the exact details in the table below, you will 
 
 Card Type             | Card Number(s)   | House Number | * Postcode | CSC | ** VBV | EXP Date  | Notes
 :---------------------|:-----------------|:-------------|:-----------|:----|:-------|:----------|:----------------------
-VISA CREDIT           | 4543059790016721 |              | 12         | 587 | Y      | 1218      | AUTH
-VISA PURCHASING       | 4715059999000437 | 28           | 35         | 124 | N      | 1218      | AUTH
-VISA ELECTRON         | 4844215500115643 |              |            | 654 | Y      | 1218      | AUTH
-MASTERCARD CREDIT     | 5454609899026213 | 14           | 11         | 358 | Y      | 1218      | AUTH
-MASTERCARD PURCHASING | 5569500000002312 |              |            | 147 | Y      | 1218      | AUTH
-MASTERCARD DEBIT      | 5573489900000028 |              | 37         | 852 | Y      | 1218      | AUTH
-MAESTRO INTERNATIONAL | 5641820000000005 |              |            | 963 | N      | 1218      | AUTH
-VISA DEBIT            | 4462030000000000 |              | 14         | 654 | Y      | 1218      | AUTH
+Visa Credit           | 4543059790016721 |              | 12         | 587 | Y      | 1218      | AUTH
+Visa Purchasing       | 4715059999000437 | 28           | 35         | 124 | N      | 1218      | AUTH
+Visa Electron         | 4844215500115643 |              |            | 654 | Y      | 1218      | AUTH
+Mastercard Credit     | 5454609899026213 | 14           | 11         | 358 | Y      | 1218      | AUTH
+Mastercard Purchasing | 5569500000002312 |              |            | 147 | Y      | 1218      | AUTH
+Mastercard Debit      | 5573489900000028 |              | 37         | 852 | Y      | 1218      | AUTH
+Maestro International | 5641820000000005 |              |            | 963 | N      | 1218      | AUTH
+Visa Debit            | 4462030000000000 |              | 14         | 654 | Y      | 1218      | AUTH
 JCB                   | 3569990010067584 |              |            | 751 | N/A    | 1218      | AUTH
 
-`* Only the numerics of a postcode are used when performing Address Verification – when submitting a payment using a payment API, only the numerics are to be provided in the request. For payments taken via a Payment Portal, a full postcode will need to be entered but the specific letters used are irrelevant. For example, if the table above lists the postcode as “46”, a tester could enter either "OL4 6BT" or "SK4 6KL" and both would result in a match.
+\* Only the numerics of a postcode are used when performing Address Verification – when submitting a payment using a payment API, only the numerics are to be provided in the request. For payments taken via a Payment Portal, a full postcode will need to be entered but the specific letters used are irrelevant. For example, if the table above lists the postcode as “46”, a tester could enter either "OL4 6BT" or "SK4 6KL" and both would result in a match.
 
 ** The "VbV" column indicates whether a card is registered in our VeriSecure test Merchant Plug-In – if the column contains a "Y", the use of that card number will prompt the tester for a password if the payment is made via e-commerce (and the specific customer configuration has VeriSecure enabled). Passwords take the form: Test_xxxx where xxxx is the last 4 digits of the card number being used.
 
@@ -106,17 +106,17 @@ Declined Payments: By entering the exact details in the table below, you will be
 
 Card Type             | Card Number(s)   | House Number | ** Postcode| CSC | *** VBV| EXP Date  | Matched Values Response Code| * Matched Value Message | AVS CSC Results
 :---------------------|:-----------------|:-------------|:-----------|:----|:-------|:----------|:----------------------------|:------------------------|:--------------
-VISA CREDIT           | 4543059790016721 |              | 12         | 231 | Y      | 1217      | 5                           | DECLINED                | 222800
-VISA PURCHASING       | 4715059999000437 | 28           | 35         | 245 | N      | 1217      | 2                           | CALL AUTH CENTRE        | 111000
-VISA ELECTRON         | 4844215500115643 |              |            | 123 | Y      | 1217      | 30                          | INVALID MERCHANT        | 222800
-MASTERCARD CREDIT     | 5454609899026213 | 14           | 11         | 231 | Y      | 1217      | 92                          | CALL AUTH CENTRE        | 111000
-MASTERCARD PURCHASING | 5569500000002312 |              |            | 588 | Y      | 1217      | 14                          | REQUEST INVALID         | 
-MASTERCARD DEBIT      | 5573489900000028 |              | 37         | 321 | Y      | 1217      | 30                          | REFERRAL X              | 111000
-MAESTRO INTERNATIONAL | 5641820000000005 |              |            | 666 | N      | 1217      | 5                           | DECLINED                | 111000
-VISA DEBIT            | 4462030000000000 |              | 14         | 222 | Y      | 1217      | 2                           | REFERRAL B              | 222800
+Visa Credit           | 4543059790016721 |              | 12         | 231 | Y      | 1217      | 5                           | DECLINED                | 222800
+Visa Purchasing       | 4715059999000437 | 28           | 35         | 245 | N      | 1217      | 2                           | CALL AUTH CENTRE        | 111000
+Visa Electron         | 4844215500115643 |              |            | 123 | Y      | 1217      | 30                          | INVALID MERCHANT        | 222800
+Mastercard Credit     | 5454609899026213 | 14           | 11         | 231 | Y      | 1217      | 92                          | CALL AUTH CENTRE        | 111000
+Mastercard Purchasing | 5569500000002312 |              |            | 588 | Y      | 1217      | 14                          | REQUEST INVALID         | 
+Mastercard Debit      | 5573489900000028 |              | 37         | 321 | Y      | 1217      | 30                          | REFERRAL X              | 111000
+Maestro International | 5641820000000005 |              |            | 666 | N      | 1217      | 5                           | DECLINED                | 111000
+Visa Debit            | 4462030000000000 |              | 14         | 222 | Y      | 1217      | 2                           | REFERRAL B              | 222800
 JCB                   | 3569990010067584 |              |            | 989 | N/A    | 1217      | 5                           | DECLINED                | 111000
 
-`* The Capita Authorisation System will automatically reverse transactions depending on the AVS CSC Results. AUTO REVERSE transactions will not complete whereas AUTH will return with an Auth code. This emulates what happens in the Live environment. Response codes/messages are usually only seen if making a payment directly against an API – front-end systems such as Payment Portal will not display the specific error, but show either a “payment declined” or “system error” page. Details on the reason for ‘payment declined’ should never be known to the card holder.
+\* The Capita Authorisation System will automatically reverse transactions depending on the AVS CSC Results. AUTO REVERSE transactions will not complete whereas AUTH will return with an Auth code. This emulates what happens in the Live environment. Response codes/messages are usually only seen if making a payment directly against an API – front-end systems such as Payment Portal will not display the specific error, but show either a “payment declined” or “system error” page. Details on the reason for ‘payment declined’ should never be known to the card holder.
 
 ** Only the numerics of a postcode are used when performing Address Verification – when submitting a payment using a payment API, only the numerics are to be provided in the request. For payments taken via a Payment Portal, a full postcode will need to be entered but the specific letters used are irrelevant. For example, if the table above lists the postcode as "46", a tester could enter either "OL4 6BT" or "SK4 6KL" and both would result in a match.
 
