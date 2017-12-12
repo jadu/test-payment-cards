@@ -8,6 +8,7 @@ A list of available test payment cards for various payment gateways. Please feel
 - [Payment Gateways](#payment-gateways)
     - [Authorize.Net](#authorizenet)
     - [Bambora](#bambora)
+    - [Barclaycard SmartPay] (#barclaycard-smartpay)
     - [Braintree](#braintree)
     - [Capita AXIS](#capita-axis)
     - [Capita SCP](#capita-scp)
@@ -44,6 +45,7 @@ JCB                       | 3088000000000017
 MasterCard                | 5424000000000015
 Visa                      | 4007000000027, 4012888818888 and 4111111111111111
 
+
 ### Bambora
 
 The following test cards are for Bambora as defined on their [developers site](http://dev.bambora.com/testcards.html#credit-cards). Use the card expiry date "05/17".
@@ -56,6 +58,34 @@ MasterCard (Sweden)  | 5125 8600 0000 0006 | 000
 Visa (Denmark)       | 4154 2100 0000 0001 | 000
 Visa (Norway)        | 4002 7700 0000 0008 | 000
 Visa (Sweden)        | 4002 6200 0000 0005 | 000
+
+
+### Barclaycard SmartPay
+
+Card Type            | Card Type         | Card Number             | CVV2/CVC3/CID
+:--------------------|:------------------|:------------------------|-----
+MasterCard           | Bijenkorf (NL)    | 5100 0811 1222 3332     | 737
+MasterCard           | Consumer (NL)     | 5100 2900 2900 2909     | 737
+MasterCard           | Consumer (PL)     | 5577 0000 5577 0004     | 737
+MasterCard           | Consumer (FR)     | 5136 3333 3333 3335     | 737
+MasterCard           | Consumer (ES)     | 5585 5585 5585 5583     | 737
+MasterCard           | Consumer (GB)     | 5555 4444 3333 1111     | 737
+MasterCard           | Corporate (GB)    | 5555 5555 5555 4444     | 737
+MasterCard           | Debit (US)        | 5500 0000 0000 0004     | 737
+MasterCard           | Pro (EC)          | 5424 0000 0000 0015     | 737
+Visa                 | Consumer (NL)     | 4111 1111 1111 1111     | 737
+Visa                 | Classic (ES)      | 4988 4388 4388 4305     | 737
+Visa                 | Classic (NL)      | 4166 6766 6766 6746     | 737
+Visa                 | Classic (PL)      | 4646 4646 4646 4644     | 737
+Visa                 | Corporate (GB)    | 4444 3333 2222 1111     | 737
+Visa                 | Debit (US)        | 4400 0000 0000 0008     | 737
+Visa                 | Gold (FR)         | 4977 9494 9494 9497     | 737
+American Express     | (NL)              | 3700 0000 0000 002      | 7373
+Diners               | (US)              | 3600 6666 3333 44       | 737
+Maestro              | International (NL)| 6731 0123 4567 8906     | 
+Maestro              | Maestro UK (GB)   | 6759 6498 2643 8453     | Start 12/2007, Issue  1
+
+
 
 ### Braintree
 
