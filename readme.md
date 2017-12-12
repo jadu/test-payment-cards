@@ -8,7 +8,7 @@ A list of available test payment cards for various payment gateways. Please feel
 - [Payment Gateways](#payment-gateways)
     - [Authorize.Net](#authorizenet)
     - [Bambora](#bambora)
-    - [Barclaycard SmartPay] (#barclaycard-smartpay)
+    - [Barclaycard SmartPay](#barclaycard-smartpay)
     - [Braintree](#braintree)
     - [Capita AXIS](#capita-axis)
     - [Capita SCP](#capita-scp)
@@ -85,6 +85,23 @@ Diners               | (US)              | 3600 6666 3333 44       | 737
 Maestro              | International (NL)| 6731 0123 4567 8906     | 
 Maestro              | Maestro UK (GB)   | 6759 6498 2643 8453     | Start 12/2007, Issue  1
 
+#### Test AVS Data
+Card Number      | Card Type | House Number | Address                            | ZIP Code | Country
+:----------------|:-----|:-----|:-----------------------------------|----------|---
+5500000000000004 | MC   | 1600 | Pennsylvania Ave NW Washington, DC | 20500    | US
+5555555555554444 | MC   | 10   | Downing Street,London              | SW1A 2AA | GB
+374251018720018  | Amex | 1600 | Pennsylvania Ave NW Washington, DC | 20500    | US
+374251021090003  | Amex | 1    | Infinite Loop Cupertino, CA        | 95014    | US
+374101012180018  | Amex | 10   | Downing Street,London              | SW1A 2AA | GB
+374251033270007  | Amex | 8-10 | Broadway, Westminster, London      | SW1H 0BG | GB
+4400000000000008 | Visa | 1    | Infinite Loop Cupertino, CA        | 95014    | US
+4444333322221111 | Visa | 8-10 | Broadway, Westminster, London      | SW1H 0BG | GB
+
+#### Test 3D-Secure Data
+Card Number      | Card Type | Username | Password | Country
+:----------------|:-----|:-----|:---------|----
+5212345678901234 | MC   | user | password | JP
+4212345678901237 | Visa | user | password | CA
 
 
 ### Braintree
