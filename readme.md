@@ -12,6 +12,7 @@ A list of available test payment cards for various payment gateways. Please feel
     - [Braintree](#braintree)
     - [Capita AXIS](#capita-axis)
     - [Capita SCP](#capita-scp)
+    - [Civica ePay](#civica-epay)
     - [ePay](#epay)
     - [Klarna](#klarna)
     - [Ogone](#ogone)
@@ -182,6 +183,12 @@ Solo                 | 6334 9000 0000 0005 | 1
 Maestro              | 5641 8200 0000 0005 | 01
 American Express     | 3742 0000 0000 004  | 
 Visa Electron        | 4917 3000 0000 0008 | 
+
+### Civica ePay
+
+Card Number      | CVV | Expiry Date
+:----------------|:----|:------------
+5123456789012346 | 123 | 05/21
 
 ### ePay
 
