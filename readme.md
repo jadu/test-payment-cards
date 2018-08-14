@@ -10,8 +10,7 @@ A list of available test payment cards for various payment gateways. Please feel
     - [Bambora](#bambora)
     - [Barclaycard SmartPay](#barclaycard-smartpay)
     - [Braintree](#braintree)
-    - [Capita AXIS](#capita-axis)
-    - [Capita SCP](#capita-scp)
+    - [Capita Axis / Capita SCP](#capita-axis--capita-scp)
     - [Civica ePay](#civica-epay)
     - [ePay](#epay)
     - [Klarna](#klarna)
@@ -130,12 +129,13 @@ JCB              | 3566002020360505 | Failed (3000)
 
 Further details about using Braintree test payment cards can be found on their [testing page](https://developers.braintreepayments.com/reference/general/testing/php).
 
-### Capita AXIS
+### Capita AXIS / Capita SCP
 
-Authorised Payments: By entering the exact details in the table below, you will be returned a successful authorised payment.
+#### Authorised Payments
+By entering the exact details in the table below, you will be returned a successful authorised payment.
 
 Card Type             | Card Number(s)   | House Number | * Postcode | CSC | ** VBV | EXP Date  | Notes
-:---------------------|:-----------------|:-------------|:-----------|:----|:-------|:----------|:----------------------
+:---------------------|:-----------------|:-------------|:-----------|:----|:-------|:----------|:-----
 Visa Credit           | 4543059790016721 |              | 12         | 587 | Y      | 1218      | AUTH
 Visa Purchasing       | 4715059999000437 | 28           | 35         | 124 | N      | 1218      | AUTH
 Visa Electron         | 4844215500115643 |              |            | 654 | Y      | 1218      | AUTH
@@ -148,9 +148,10 @@ JCB                   | 3569990010067584 |              |            | 751 | N/A
 
 \* Only the numerics of a postcode are used when performing Address Verification – when submitting a payment using a payment API, only the numerics are to be provided in the request. For payments taken via a Payment Portal, a full postcode will need to be entered but the specific letters used are irrelevant. For example, if the table above lists the postcode as “46”, a tester could enter either "OL4 6BT" or "SK4 6KL" and both would result in a match.
 
-** The "VbV" column indicates whether a card is registered in our VeriSecure test Merchant Plug-In – if the column contains a "Y", the use of that card number will prompt the tester for a password if the payment is made via e-commerce (and the specific customer configuration has VeriSecure enabled). Passwords take the form: Test_xxxx where xxxx is the last 4 digits of the card number being used.
+** The "VbV" column indicates whether a card is registered in our VeriSecure test Merchant Plug-In – if the column contains a "Y", the use of that card number will prompt the tester for a password if the payment is made via e-commerce (and the specific customer configuration has VeriSecure enabled). Passwords take the form: `Test_xxxx` where xxxx is the last 4 digits of the card number being used.
 
-Declined Payments: By entering the exact details in the table below, you will be returned the Matched Value Message as shown.
+#### Declined Payments
+By entering the exact details in the table below, you will be returned the Matched Value Message as shown.
 
 Card Type             | Card Number(s)   | House Number | ** Postcode| CSC | *** VBV| EXP Date  | Matched Values Response Code| * Matched Value Message | AVS CSC Results
 :---------------------|:-----------------|:-------------|:-----------|:----|:-------|:----------|:----------------------------|:------------------------|:--------------
@@ -168,21 +169,7 @@ JCB                   | 3569990010067584 |              |            | 989 | N/A
 
 ** Only the numerics of a postcode are used when performing Address Verification – when submitting a payment using a payment API, only the numerics are to be provided in the request. For payments taken via a Payment Portal, a full postcode will need to be entered but the specific letters used are irrelevant. For example, if the table above lists the postcode as "46", a tester could enter either "OL4 6BT" or "SK4 6KL" and both would result in a match.
 
-*** The "VbV" column indicates whether a card is registered in our VeriSecure test Merchant Plug-In – if the column contains a "Y", the use of that card number will prompt the tester for a password if the payment is made via e-commerce (and the specific customer configuration has VeriSecure enabled). Passwords take the form: Test_xxxx where xxxx is the last 4 digits of the card number being used.
-
-### Capita SCP
-
-The following test cards are for Capita SCP 
-
-Card Type            | Card Number         | Issue
-:--------------------|:--------------------|:-------
-Visa                 | 4929 0000 0000 6    |
-MasterCard           | 5404 0000 0000 0001 |
-Visa Debit / Delta   | 4462 0000 0000 0003 | 
-Solo                 | 6334 9000 0000 0005 | 1
-Maestro              | 5641 8200 0000 0005 | 01
-American Express     | 3742 0000 0000 004  | 
-Visa Electron        | 4917 3000 0000 0008 | 
+*** The "VbV" column indicates whether a card is registered in our VeriSecure test Merchant Plug-In – if the column contains a "Y", the use of that card number will prompt the tester for a password if the payment is made via e-commerce (and the specific customer configuration has VeriSecure enabled). Passwords take the form: `Test_xxxx` where xxxx is the last 4 digits of the card number being used.
 
 ### Civica ePay
 
