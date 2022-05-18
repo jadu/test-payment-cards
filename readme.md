@@ -374,6 +374,18 @@ Visa Debit              | 4462030000000000 and 4917610000000000003
 Visa Electron (UK only) | 4917300800000000
 Visa Purchasing         | 4484070000000000
 
+
+For test purposes only WorldPay has defined a set of test credit card numbers. These can only be used in the test environment.
+
+VISA 4111 1111 1111 1111 and 4444 3333 2222 1111
+AMEX 3434 343434 34343
+ECMC 5555 5555 5555 4444
+
+These card numbers should always be used in combination with an expiry date in the future and with cardholder name REFUSED, AUTHORISED, ERROR ,REFERRED or CAPTURED.
+
+Cardholder name REFUSED will simulate a refused payment situation whereas AUTHORISED will simulate an authorised payment situation. Cardholder name ERROR will simulate a payment that ended in error and REFERRED simulates a refused payment with refusal reason 'reffered'. And finally, CAPTURED as cardholder name will simulate a payment ending as in status CAPTURED.
+
+
 ## Further Resources
 
 This section has some other external resources you might want to check out.
