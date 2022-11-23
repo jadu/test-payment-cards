@@ -7,6 +7,7 @@ A list of available test payment cards for various payment gateways. Please feel
 
 - [Payment Gateways](#payment-gateways)
     - [Authorize.Net](#authorizenet)
+    - [BPoint V3](#bpoint-v3)
     - [Bambora](#bambora)
     - [Barclaycard SmartPay](#barclaycard-smartpay)
     - [Braintree](#braintree)
@@ -45,6 +46,19 @@ JCB                       | 3088000000000017
 MasterCard                | 5424000000000015
 Visa                      | 4007000000027, 4012888818888 and 4111111111111111
 
+
+### BPoint V3
+
+Card Type            | Card Number         | Expiry Date            | CVN
+:--------------------|:--------------------|:-----------------------|-----
+Visa                 | 4444333322221111    | Any date in the future | 123
+
+The cents in the amount being paid for determines whether the payment succeeds or not:
+
+- 10.00 would be a success (because 00 is the bank response code for a valid payment)
+- 10.51 would be declined (because 51 is the code for a declined payment)
+
+A full list of response codes can be found in the [TxnResp Responses section of the BPoint V3 API documentation](https://www.bpoint.com.au/developers/v3/#!#txnresponses).
 
 ### Bambora
 
